@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header h1{
+    text-align: center;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 2rem;
+}
+/* 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+} */
+body{
+    background-color: rgb(242, 214, 52);
+}
+
+.card{
+    width: 55%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(128, 128, 128);
+    transition: all 3s;
+    background-color: white;
+}
+.card:hover{
+    transform : scale(1.6);
+    rotate: 360deg;
+    z-index: 1;
+}
+.card > img{
+    width: 100%;
+}
+@media (max-width: 766px) {
+    .card{
+        margin-left: 10px ;
+    }
+}
